@@ -12,7 +12,7 @@ weatherForm.addEventListener('submit', (event) => {
     successMessage.textContent = ''
     errorMessage.textContent = 'Loading...'
 
-    fetch(`http://api.weatherstack.com/current?access_key=08612709c5449d8b910b632a062077f1&query=${location}`)
+    fetch(`/api.weatherstack.com/current?access_key=08612709c5449d8b910b632a062077f1&query=${location}`)
         .then((response) => {
             response.json().then((data) => {
                 if (data.error) {
