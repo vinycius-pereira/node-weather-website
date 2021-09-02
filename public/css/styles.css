@@ -36,6 +36,12 @@ header a {
    text-decoration: none;
 }
 
+a {
+   target: "_blank";
+   text-decoration: none;
+   color: #888888;
+}
+
 .avatar {
    width: 150px;
    border-radius: 100%;

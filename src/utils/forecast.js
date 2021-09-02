@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback) => {
         } else {
             const currentData = body.current;
             callback( undefined,
-                'It\'s currently ' + currentData.weather_descriptions[0] + '. It\'s ' + currentData.temperature + 'C° out. It feels like ' + currentData.feelslike + 'C° degress out.')
+                'In '+ body.request.query + ' It\'s currently ' + currentData.weather_descriptions[0] + '. It\'s ' + currentData.temperature + 'C° out. It feels like ' + currentData.feelslike + 'C° degress out.')
         }
     })
 }
